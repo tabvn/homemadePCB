@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "microcontroller": {
+      ".read": false,
+      ".write": false
+    },
+    "app": {
+    ".read": "auth != null && root.child('users/'+auth.uid).exists() && root.child('users/'+auth.uid +'/verified').val() === true",
+    ".write": "auth != null && root.child('users/'+auth.uid).exists() && root.child('users/'+auth.uid +'/verified').val() === true"
+    },
+    "users": {
+      ".read": "auth != null && root.child('users/'+auth.uid).exists() && root.child('users/'+auth.uid +'/verified').val() === true",
+      ".write": "auth != null"
+      
+    }
+  }
+}
