@@ -13,3 +13,6 @@ Home made light control 4 chanels via Internet use Arduino, ESP8266, Firebase
 * 1 PCB drill http://www.ebay.com/itm/New-DIY-Mini-Micro-Small-Electric-Aluminum-Hand-Drill-DC-5V-for-Motor-PCB-/401235540678?hash=item5d6b807ac6:g:XNUAAOSw2xRYP5yq
 * 1 Temperature Electric Soldering http://www.banggood.com/Mustool-MT223-60W-Adjustable-Temperature-Electric-Soldering-Iron-with-5pcs-Solder-Tips-p-1077119.html?p=FA230451278522016060
 * Power Supply Adapter 5v 1 -> 2A link to buy www.banggood.com/5V-1A-Mini-USB-Wall-Charger-AC-Power-Supply-Adapter-EUUS-Plug-for-GPS-MP3-Radio-Speaker-Camera-etc-p-1031193.html?p=FA230451278522016060
+
+
+Screenshots: https://www.facebook.com/TabvnGroup/posts/1527880833890872
