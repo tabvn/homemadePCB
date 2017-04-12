@@ -2,11 +2,13 @@
 #include <ESP8266WiFi.h>
 
 // Set these to run example.
-#define WIFI_SSID "Home"
-#define WIFI_PASSWORD "hoaminh8vn"
+#define WIFI_SSID "WIFINAME"
+#define WIFI_PASSWORD "WIFI PAssword"
 
 #define CHIPID ESP.getChipId()
 #define PATH "/microcontroller/"
+#define FBHOST "home-b194e.firebaseio.com"
+#define FBKEY "4Mi9GfuIQmE2NoAanuCd3FqsjTtI1qjC9HiHODj6"
 
 int num = 4;
 int pins[] = {D5, D6, D7, D8};
@@ -21,7 +23,7 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
   }
-  Firebase.begin("home-b194e.firebaseio.com", "4Mi9GfuIQmE2NoAanuCd3FqsjTtI1qjC9HiHODj6");
+  Firebase.begin(FBHOST, FBKEY);
 
   delay(1000);
   registerMicrocontroller();
