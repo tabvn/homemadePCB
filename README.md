@@ -12,4 +12,4 @@ Home made light control 4 chanels via Internet use Arduino, ESP8266, Firebase
 * 1 Fecl3 Powder we do use it to Erase copper board. I recommend buy it from local store. However you may try: http://www.ebay.com/itm/Ferric-Chloride-Anhydrous-FeCl3-99-9-ACS-Grade-Powder-4-Oz-in-a-Bottle-USA-/322097224602?hash=item4afe7d9b9a:g:X1kAAOSw5dNWszn-
 * 1 PCB drill http://www.ebay.com/itm/New-DIY-Mini-Micro-Small-Electric-Aluminum-Hand-Drill-DC-5V-for-Motor-PCB-/401235540678?hash=item5d6b807ac6:g:XNUAAOSw2xRYP5yq
 * 1 Temperature Electric Soldering http://www.banggood.com/Mustool-MT223-60W-Adjustable-Temperature-Electric-Soldering-Iron-with-5pcs-Solder-Tips-p-1077119.html?p=FA230451278522016060
-
+* Power Supply Adapter 5v 1 -> 2A link to buy www.banggood.com/5V-1A-Mini-USB-Wall-Charger-AC-Power-Supply-Adapter-EUUS-Plug-for-GPS-MP3-Radio-Speaker-Camera-etc-p-1031193.html?p=FA230451278522016060
