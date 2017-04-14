@@ -19,15 +19,16 @@ import {AppService} from './app.service';
 import { EditDeviceComponent } from './settings/edit-device/edit-device.component';
 import { AutomationComponent } from './automation/automation.component';
 import { SelectDevicesComponent } from './select-devices/select-devices.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 export const fbConfig = {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: ''
+    apiKey: "AIzaSyCDqdgeSIhVYJs97ZZdgqpXCcmMlHoulSA",
+    authDomain: "myhome-5d4ae.firebaseapp.com",
+    databaseURL: "https://myhome-5d4ae.firebaseio.com",
+    projectId: "myhome-5d4ae",
+    storageBucket: "myhome-5d4ae.appspot.com",
+    messagingSenderId: "561768036383"
 };
 
 const fbAuthConfig = {
@@ -52,6 +53,7 @@ const fbAuthConfig = {
     entryComponents: [LoginComponent, RegisterComponent, EditDeviceComponent, SelectDevicesComponent],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
         HttpModule,
         MaterialModule,

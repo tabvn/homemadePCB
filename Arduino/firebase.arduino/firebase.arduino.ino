@@ -2,13 +2,13 @@
 #include <ESP8266WiFi.h>
 
 // Set these to run example.
-#define WIFI_SSID "WIFINAME"
-#define WIFI_PASSWORD "WIFI PAssword"
+#define WIFI_SSID "Home"
+#define WIFI_PASSWORD "hoaminh8vn"
 
 #define CHIPID ESP.getChipId()
 #define PATH "/microcontroller/"
-#define FBHOST "YOURAPP.firebaseio.com"
-#define FBKEY "AUTH KEY"
+#define FBHOST "myhome-5d4ae.firebaseio.com"
+#define FBKEY "Nldg0R9lv5zHPcQzqjJ2RNdPDtdWgRgjm4rZC06C"
 
 int num = 4;
 int pins[] = {D5, D6, D7, D8};
