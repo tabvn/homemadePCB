@@ -1,0 +1,23 @@
+<form #f="ngForm" (ngSubmit)="onLogin()">
+
+  <div class="message" *ngIf="message">
+    <p class="error">{{message}}</p>
+  </div>
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="email" name="email" placeholder="Email" [(ngModel)]="user.email"/>
+    </md-input-container>
+  </div>
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="password" name="password" placeholder="Password" [(ngModel)]="user.password"/>
+    </md-input-container>
+  </div>
+
+  <div class="form-group">
+    <button [disabled]="submitted" md-raised-button type="submit"><span *ngIf="!submitted">Login</span><span *ngIf="submitted">Wait...</span></button>
+    Or
+    <button md-button type="button" (click)="register()">Register</button>
+  </div>
+</form>

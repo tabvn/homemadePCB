@@ -1,0 +1,23 @@
+<md-sidenav-container class="app-primary">
+
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    <app-navigation *ngIf="app.auth && app.auth.uid"></app-navigation>
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button md-icon-button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+    {{app.getTitle()}}
+    <span class="app-toolbar-filler"></span>
+    <button md-button class="user-action-button login" (click)="login()" *ngIf="!app.auth">Login</button>
+    <button md-button class="user-action-button logout" (click)="logout()" *ngIf="app.auth && app.auth.uid">Sign Out</button>
+  </md-toolbar>
+
+  <div class="app-content">
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+</md-sidenav-container>

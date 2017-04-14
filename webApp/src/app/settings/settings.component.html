@@ -1,0 +1,9 @@
+<md-card>
+
+  <md-list dense>
+    <a class="link" md-list-item *ngFor="let device of app.devices|async" (click)="edit(device)">
+      <md-icon md-list-icon>edit</md-icon>
+      <h3 md-line> {{device.title}}</h3>
+    </a>
+  </md-list>
+</md-card>

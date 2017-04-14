@@ -1,0 +1,66 @@
+<md-card>
+  <button md-button (click)="addTask()"><md-icon>add</md-icon> Task</button>
+
+  <md-divider></md-divider>
+
+  <div>
+    <div *ngFor="let task of app.automation|async; let j = index;">
+      <div>
+        <h5>{{task.title}}
+          <button [color]="'primary'" *ngIf="!showEdit[j]" md-icon-button (click)="showEdit[j] = true">
+            <md-icon>edit</md-icon>
+          </button>
+
+
+          <button [color]="'primary'" *ngIf="showEdit[j]" md-mini-fab (click)="update(task, j)">
+            <md-icon>check</md-icon>
+          </button>
+          <button *ngIf="showEdit[j]" md-button (click)="showEdit[j] = false">Cancel</button>
+          <button md-icon-button (click)="deleteTask(task)">
+            <md-icon [color]="'warn'">delete</md-icon>
+          </button>
+        </h5>
+        <div class="scheduler-value" [hidden]="!showEdit[j]">
+          <div class="form-control">
+            <md-input-container class="full-width">
+              <input mdInput name="title_{{j}}" [(ngModel)]="task.title" placeholder="Title" [required]="true">
+            </md-input-container>
+          </div>
+          <div class="form-control">
+            <md-input-container class="full-width">
+              <input mdInput name="value_{{j}}" [(ngModel)]="task.value" placeholder="Pattern value" [required]="true">
+            </md-input-container>
+          </div>
+
+          <ul class="help">
+            <li>Seconds: 0-59</li>
+            <li>Minutes: 0-59</li>
+            <li>Hours: 0-23</li>
+            <li>Day of Month: 1-31</li>
+            <li>Months: 0-11</li>
+            <li>Day of Week: 0-6</li>
+          </ul>
+          <button (click)="openSelectDevices(task)" md-button title="Add device">
+            <md-icon>add</md-icon> Device
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="task.devices">
+        <md-nav-list>
+          <md-list-item *ngFor="let device of task.devices; let i = index;">
+            <md-slide-toggle [checked]="device.state"
+                             (change)="changeDeviceState(task, device, $event)"> {{ device.title }}
+            </md-slide-toggle>
+          </md-list-item>
+        </md-nav-list>
+        <md-divider></md-divider>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</md-card>

@@ -1,0 +1,5 @@
+<md-list dense>
+  <md-list-item *ngFor="let device of app.devices|async">
+    <md-slide-toggle [checked]="device.state" (change)="deviceStateChange($event, device)">{{device.title}}</md-slide-toggle>
+  </md-list-item>
+</md-list>

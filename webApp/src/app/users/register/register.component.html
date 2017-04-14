@@ -1,0 +1,43 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="message" *ngIf="message">
+    <p class="error">{{message}}</p>
+  </div>
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="text" name="firstName" placeholder="First Name" [(ngModel)]="user.firstName" [required]="true"/>
+    </md-input-container>
+  </div>
+
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="text" name="LastName" placeholder="Last Name" [(ngModel)]="user.lastName" [required]="true"/>
+    </md-input-container>
+  </div>
+
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="email" name="email" placeholder="Email" [(ngModel)]="user.email" [required]="true"/>
+    </md-input-container>
+  </div>
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="password" name="password" placeholder="Password" [(ngModel)]="user.password" [required]="true"/>
+    </md-input-container>
+  </div>
+
+  <div class="form-group">
+    <md-input-container class="full-width">
+      <input mdInput type="password" name="passwordConfirm" placeholder="Password Confirm"
+             [(ngModel)]="user.passwordConfirm" [required]="true"/>
+    </md-input-container>
+  </div>
+
+  <div class="form-group">
+    <button md-raised-button type="submit">Register</button>
+  </div>
+</form>

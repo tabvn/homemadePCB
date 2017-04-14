@@ -7,8 +7,8 @@
 
 #define CHIPID ESP.getChipId()
 #define PATH "/microcontroller/"
-#define FBHOST "home-b194e.firebaseio.com"
-#define FBKEY "4Mi9GfuIQmE2NoAanuCd3FqsjTtI1qjC9HiHODj6"
+#define FBHOST "YOURAPP.firebaseio.com"
+#define FBKEY "AUTH KEY"
 
 int num = 4;
 int pins[] = {D5, D6, D7, D8};

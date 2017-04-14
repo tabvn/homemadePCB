@@ -1,0 +1,7 @@
+<md-list>
+  <md-list *ngFor="let device of app.devices|async">
+    <md-checkbox class="full-width" [checked]="selected[device.$key]" [(ngModel)]="selected[device.$key]">{{device.title}}</md-checkbox>
+  </md-list>
+
+  <button (click)="save()" md-button>Save</button>
+</md-list>

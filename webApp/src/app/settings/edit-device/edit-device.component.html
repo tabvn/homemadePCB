@@ -1,0 +1,6 @@
+<form #f="ngForm" (ngSubmit)="onSave()">
+  <md-input-container class="full-width">
+    <input mdInput name="title" placeholder="Title" [(ngModel)]="device.title" [required]="true"/>
+  </md-input-container>
+  <button type="submit" md-raised-button>Save</button>
+</form>

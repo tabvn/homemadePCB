@@ -1,0 +1,18 @@
+<md-list>
+  <md-list-item>
+    <img md-list-avatar
+         [src]="app.auth && app.auth.auth.photoURL ? app.auth.auth.photoURL : 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y'">
+    <h3 md-line *ngIf="app.auth">{{app.auth.auth.email}}</h3>
+    <p md-line>
+      <button md-button *ngIf="app.auth" (click)="app.signOut()">Sign Out</button>
+    </p>
+  </md-list-item>
+</md-list>
+
+
+<md-nav-list>
+  <a md-list-item routerLink="/" routerLinkActive="active">Home</a>
+  <a md-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
+  <md-divider></md-divider>
+  <a md-list-item routerLink="/automation">Automation</a>
+</md-nav-list>
